@@ -1,6 +1,7 @@
+import { useCallback } from "react";
 import { createContext, useEffect, useContext, useReducer } from "react";
 
-const URL = "http://localhost:8000";
+const URL = "https://my-json-server.typicode.com/ahmeddsaid/world-wise-cities";
 
 const CitiesContext = createContext();
 
@@ -90,22 +91,26 @@ function CitiesProvider({ children }) {
   }, []);
 
   // Get City
-  async function getCity(id) {
-    if (currentCity.id === Number(id)) return;
+  // memoizing getCity to prevent infinite loop
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (currentCity.id === Number(id)) return;
 
-    dispatch({ type: "loading" });
-    try {
-      const res = await fetch(`${URL}/cities/${id}`);
-      const data = await res.json();
-      // setCurrentCity(data);
-      dispatch({ type: "city/loaded", payload: data });
-    } catch {
-      dispatch({
-        type: "error",
-        payload: "There was an error loading data...",
-      });
-    }
-  }
+      dispatch({ type: "loading" });
+      try {
+        const res = await fetch(`${URL}/cities/${id}`);
+        const data = await res.json();
+        // setCurrentCity(data);
+        dispatch({ type: "city/loaded", payload: data });
+      } catch {
+        dispatch({
+          type: "error",
+          payload: "There was an error loading data...",
+        });
+      }
+    },
+    [currentCity.id]
+  );
 
   // Create City
   async function createCity(newCity) {
