@@ -9,6 +9,8 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "update-push": "git add . && git commit -m \"minor update\" && git push origin master",
+    "build-deploy": "npm run build && npm run deploy",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server --watch data/cities.json --port 8000 --delay 500"
