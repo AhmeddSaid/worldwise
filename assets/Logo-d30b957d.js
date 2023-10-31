@@ -1,0 +1,1 @@
+import{j as o,L as s}from"./index-ca3248d7.js";const l="_logo_7b2ls_1",t={logo:l};function g(){return o.jsx(s,{to:"/",children:o.jsx("img",{src:"/worldwise/assets/images/logo.png",alt:"WorldWise logo",className:t.logo})})}export{g as L};
