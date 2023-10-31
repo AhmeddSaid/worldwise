@@ -1,0 +1,88 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": "17806751"
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": "98443197"
+    },
+    {
+      "cityName": "Giza",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2023-09-03T13:41:10.162Z",
+      "notes": "Home",
+      "position": {
+        "lat": "29.996918987324623",
+        "lng": "31.17395944820795"
+      },
+      "id": "98443198"
+    },
+    {
+      "cityName": "Montreal",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "date": "2023-09-03T13:46:32.263Z",
+      "notes": "",
+      "position": {
+        "lat": "45.46415398148297",
+        "lng": "-73.62948227631672"
+      },
+      "id": "98443199"
+    },
+    {
+      "cityName": "Alexandria",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2023-09-03T13:52:56.954Z",
+      "notes": "",
+      "position": {
+        "lat": "31.090901384701194",
+        "lng": "29.996759909063186"
+      },
+      "id": "98443200"
+    },
+    {
+      "cityName": "Gaza",
+      "country": "Palestine, State of",
+      "emoji": "🇵🇸",
+      "date": "2023-10-30T16:23:46.042Z",
+      "notes": "❤️",
+      "position": {
+        "lat": "31.504800176063878",
+        "lng": "34.46411132812501"
+      },
+      "id": "98443201"
+    }
+  ]
+}

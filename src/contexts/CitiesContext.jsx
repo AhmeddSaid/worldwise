@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { createContext, useEffect, useContext, useReducer } from "react";
 
-const URL = "https://my-json-server.typicode.com/ahmeddsaid/world-wise-cities";
+const URL = "https://my-json-server.typicode.com/ahmeddsaid/worldwise";
 
 const CitiesContext = createContext();
 
